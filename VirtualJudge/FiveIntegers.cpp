@@ -15,22 +15,11 @@ const double EPS = 1e-9;
 
 int main() {
   ios::sync_with_stdio(0); cin.tie(0);
-  int t; cin >> t;
-  while (t--) {
-    int n; cin >> n;
-    vi arr(n); 
-    for (int& v : arr) cin >> v;
-    bool a, b; a = b = false;
-    for (int& v : arr) 
-      if (v & 1) a = true;
-      else b = true;
-
-    if (a && b) 
-      sort(arr.begin(), arr.end()); 
-
-    for (int& v : arr) cout << v << ' ';
-    cout << '\n';
+  set<int> st;
+  for (int i = 0; i < 5; i++) {
+    int v; cin >> v;
+    st.insert(v);
   }
-
+  cout << st.size();
   return 0;
 }
