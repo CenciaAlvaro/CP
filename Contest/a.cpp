@@ -19,6 +19,7 @@ int main() {
   int t; cin >> t;
 
   while (t--) {
+
     int n, k; cin >> n >> k;
     vi arr(n);
     for (int& v : arr) cin >> v;
